@@ -3,7 +3,7 @@ function maxOfTwoNumbers(number1, number2) {
     
   return number1 > number2 ? number1 : number2;
 }
-
+maxOfTwoNumbers(4, 10)
 
 
 // Iteration #2: Find longest word
@@ -18,6 +18,7 @@ function findLongestWord(arr) {
   }
   return longest
 }
+findLongestWord(words)
 
 
 
@@ -25,9 +26,10 @@ function findLongestWord(arr) {
 const numbers = [6, 12, 1, 18, 13, 16, 2, 1, 8, 10];
 
 function sumNumbers(arr) {
-  const total = numbers.reduce((acc,val) => acc + val);
+  const total = arr.reduce((acc,val) => acc + val);
   return total;
 }
+sumNumbers(numbers)
 
 
 
@@ -45,6 +47,7 @@ function averageNumbers(arr) {
   const totalAverage = sum / arr.length;
   return totalAverage;
   }
+  averageNumbers(numbersAvg)
 
 
 
@@ -61,6 +64,7 @@ function averageWordLength(arr) {
   }
   return wordsLength / arrLength;
  }
+ averageWordLength(wordsArr)
 
  //trying with methods
  function averageWordLength(arr) {
@@ -68,20 +72,21 @@ function averageWordLength(arr) {
   const wordsArrAvg = wordsLength / arr.length;
   return wordsArrAvg
 }
-console.log(averageWordLength(wordsArr))
+averageWordLength(wordsArr)
  
 
 // Bonus - Iteration #4.1
 function avg(arr) {
   const newArr = [];
   for (i = 0; i < arr.length; i++){
-    if (mixedArr[i] === 'string') newArr.push(string.length);
-    if (mixedArr[i] === true || mixedArr[i] === false) newArr.push(1);
-    if(mixedArr[i] === 'number') newArr.push('number');
+    if (typeof mixedArr[i] === 'string') newArr.push(string.length);
+    if (typeof mixedArr[i] === true || typeof mixedArr[i] === false) newArr.push(1);
+    if(typeof mixedArr[i] === 'number') newArr.push('number');
     console.log(newArr)
   }
   return newArr.reduce((acc, val) => acc + val)/arr.length;
 }
+avg()
 
 // Iteration #5: Unique arrays
 const wordsUnique = [
@@ -106,6 +111,7 @@ function uniquifyArray(arr) {
   }
   return uniqueWords;
 }
+uniquifyArray(wordsUnique)
 
 
 
@@ -115,6 +121,7 @@ const wordsFind = ['machine', 'subset', 'trouble', 'starting', 'matter', 'eating
 function doesWordExist(arr, word) {
  return arr.includes(word) ? true : false;
 }
+doesWordExist(wordsFind)
 
 
 
@@ -140,6 +147,7 @@ function howManyTimes(arr, word) {
   }
   return times;
 }
+howManyTimes(wordCount);
 
 
 
